@@ -1,0 +1,34 @@
+.calculo{
+    background-image: url(https://th.bing.com/th/id/R.a1bb4026a73f11261d45c4438afe1d2a?rik=Jrg4xVQgvdRLbA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-3BesKUi6JZw%2fU7y2sw6V5XI%2fAAAAAAABc7Y%2fHjR_XCce-Uw%2fs1600%2f38.gif&ehk=2Jd29sDHiEKAhUl39RIf1CM2%2fdqv2eM8ooOSi6gEgf8%3d&risl=&pid=ImgRaw&r=0);
+}
+.cc{
+    
+    background-color: black;
+    color: aqua;
+    font-size: 300%;
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    padding: 15px;
+
+    margin: auto;
+    border-radius: 40px;
+    border-bottom: 5px solid;
+    outline: none;
+
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+
+    border: 5px solid;
+    padding: 10px;
+    text-align: center;
+}
+.bb{
+    background-color: black;
+    color: aqua;
+    font-family: 'Permanent Marker', cursive;
+
+   
+}
