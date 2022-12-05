@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang=“pt-br”>
+	<head>
+		<title>Calcular arroba do boi</title>
+		<meta charset=“UTF-8”>
+        <link rel="stylesheet" href="estilo.css">
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<script>
+			function arroba(){
+				var vpes_tmp=document.f_arroba.f_pes.value;
+				
+				if((vpes_tmp == 0)){
+					alert("Digite o peso do animal");
+				}else{
+					
+					var vpes=vpes_tmp.replace(",", ".");
+				
+					var varroba=(vpes/(32.14)).toFixed(1);
+					alert("A quantidade de arrobas do boi é: " + varroba);
+				}
+			}
+			
+		</script>
+	</head>
+	<body class="calculo">
+        <h1 class="bb">
+            O valor da arroba do boi calculado em propriedade do produtor
+        </h1>
+	
+		<form class="cc" name="f_arroba">
+			<label>Peso</label><br>
+			<input type="text" name="f_pes" value="0"><br><br>
+			<input class="btn btn-primary"type="button" value="Calcular" onclick="arroba()">
+		</form>
+		<br>
+		
+
+	</body>
+</html>
