@@ -1,41 +1,53 @@
-<!doctype html>
-<html lang=“pt-br”>
-	<head>
-		<title>Calcular arroba do boi</title>
-		<meta charset=“UTF-8”>
-        <link rel="stylesheet" href="estilo.css">
-        
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-		<script>
-			function arroba(){
-				var vpes_tmp=document.f_arroba.f_pes.value;
-				
-				if((vpes_tmp == 0)){
-					alert("Digite o peso do animal");
-				}else{
-					
-					var vpes=vpes_tmp.replace(",", ".");
-				
-					var varroba=(vpes/(32.14)).toFixed(1);
-					alert("A quantidade de arrobas do boi é: " + varroba);
-				}
-			}
-			
-		</script>
-	</head>
-	<body class="calculo">
-        <h1 class="bb">
-            O valor da arroba do boi calculado em propriedade do produtor
-        </h1>
-	
-		<form class="cc" name="f_arroba">
-			<label>Peso</label><br>
-			<input type="text" name="f_pes" value="0"><br><br>
-			<input class="btn btn-primary"type="button" value="Calcular" onclick="arroba()">
-		</form>
-		<br>
-		
+<!DOCTYPE html>
+<html lang="pt-br">
 
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" contente="Karla Ferreira">
+    <meta name="description" contente="O Objetivo é facilitar o calculo da arroba de boi">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Calcular arroba do boi</title>
+	<script>
+		function arroba() {
+			var vpes_tmp = document.f_arroba.f_pes.value;
+			var va_tmp = document.f_arroba.f_a.value;
+
+			if ((va_tmp == 0) || (vpes_tmp == 0)) {
+				alert("Digite o peso do animal e o valor da arroba");
+			} else {
+
+				var vpes = vpes_tmp.replace(",", ".");
+				var va = va_tmp.replace(",", ".");
+
+				var varroba = (vpes / (32.14)).toFixed(1);
+				var vvalor = (varroba * va).toFixed(1);
+
+				alert("A quantidade de arrobas do boi é: " + varroba + "\n o valor do boi é: R$ " + vvalor);
+
+			}
+		}
+	</script>
+</head>
+
+<body class="a">
+	<h1 class="ab">
+		O valor da arroba do boi calculado em propriedade do produtor
+	</h1>
+
+	<form name="f_arroba" class="aa">
+		<label>Peso</label>
+		<input class="ac" type="text" name="f_pes" value="0"><br><br>
+
+		<label>Valor</label>
+		<input class="ac" type="text" name="f_a" value="0"><br><br>
+		<input class="ad" type="button" value="Calcular" onclick="arroba()">
+	</form>
+	<br>
+
+
+</body>
+
 </html>
