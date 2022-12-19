@@ -1,16 +1,19 @@
-.calculo{
-    background-image: url(https://th.bing.com/th/id/R.a1bb4026a73f11261d45c4438afe1d2a?rik=Jrg4xVQgvdRLbA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-3BesKUi6JZw%2fU7y2sw6V5XI%2fAAAAAAABc7Y%2fHjR_XCce-Uw%2fs1600%2f38.gif&ehk=2Jd29sDHiEKAhUl39RIf1CM2%2fdqv2eM8ooOSi6gEgf8%3d&risl=&pid=ImgRaw&r=0);
+.a{
+    background-image: url(boiada.jpeg);
+    background-size: 100%;
 }
-.cc{
-    
+
+.aa {
     background-color: black;
     color: aqua;
     font-size: 300%;
     font-family: 'Permanent Marker', cursive;
+
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 40%;
     padding: 15px;
+    opacity: 0.8;
 
     margin: auto;
     border-radius: 40px;
@@ -19,16 +22,37 @@
 
     border-radius: 10px;
     padding: 60px;
-    width: min-content;
 
     border: 5px solid;
     padding: 10px;
     text-align: center;
 }
-.bb{
+.ab{
+    text-align: center;
     background-color: black;
     color: aqua;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-   
+    margin: auto;
+    border-radius: 30px;
+    border-bottom: 2px solid;
+
+}
+.ac{
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    border-bottom: 2px solid;
+    padding: 12px;
+    font-size: 18px;
+}
+.ad{
+    background-color: aqua;
+    margin: auto;
+    border-radius: 30px;
+    border-bottom: 2px solid;
+    padding: 12px;
+    font-size: 27px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
 }
