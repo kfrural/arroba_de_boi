@@ -2,14 +2,27 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="author" contente="Karla Ferreira">
-    <meta name="description" contente="O Objetivo é facilitar o calculo da arroba de boi">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="author" contente="Karla Ferreira ">
+	<meta name="profile" href="https://www.instagram.com/kf.rural">
+	<meta name="description" contente="O Objetivo é facilitar o calculo da arroba de boi">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <title>Calcular arroba do boi</title>
+	<title>Calcular arroba do boi</title>
+
+</head>
+
+<body class="a">
+	<h1 class="ab">
+		O valor da arroba do boi calculado em propriedade do produtor
+	</h1>
+	<br>
+	<h6 class="ax">
+		O Valor atribuído da arroba é 32,14 kg
+	</h6>
+
 	<script>
 		function arroba() {
 			var vpes_tmp = document.f_arroba.f_pes.value;
@@ -22,20 +35,14 @@
 				var vpes = vpes_tmp.replace(",", ".");
 				var va = va_tmp.replace(",", ".");
 
-				var varroba = (vpes / (32.14)).toFixed(1);
-				var vvalor = (varroba * va).toFixed(1);
+				var varroba = (vpes / (32.14)).toFixed(2);
+				var vvalor = (varroba * va).toFixed(2).replace(".", ",");
 
-				alert("A quantidade de arrobas do boi é: " + varroba + "\n o valor do boi é: R$ " + vvalor);
+				document.f_arroba.innerHTML = "Tem:" + varroba + " arrobas" + "<br> Seu valor é: R$ " + vvalor;
 
 			}
 		}
 	</script>
-</head>
-
-<body class="a">
-	<h1 class="ab">
-		O valor da arroba do boi calculado em propriedade do produtor
-	</h1>
 
 	<form name="f_arroba" class="aa">
 		<label>Peso</label>
